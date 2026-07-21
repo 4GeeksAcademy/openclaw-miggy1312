@@ -27,28 +27,25 @@ Toma lo que aprendí hoy (unos pocos puntos en bruto) y añade una entrada estru
 
 ---
 
-## Skill 2 — Briefing Rápido por Telegram
+## Skill 2 — Notas de Reunión
 
 ### 1. ¿Qué hace esta skill?
-Cuando la activo, me manda a Telegram un briefing breve y directo con el estado de mi día: qué toca, qué quedó pendiente y un recordatorio de foco — sin que yo tenga que abrir varias apps.
+Toma apuntes en bruto de una reunión o clase y los estructura en tres bloques —Decisiones, Tareas y Preguntas abiertas— guardando el resultado en un Google Doc.
 
 ### 2. ¿Qué input necesita el agente?
-- **Lo que le doy:** el disparador (ej. "dame mi briefing") y, opcionalmente, un par de puntos de contexto del día (compromisos, tarea principal).
-- **Formato:** un mensaje corto o incluso solo el comando de activación.
+- **Lo que le doy:** apuntes desordenados en lenguaje natural (lo que anoté durante la reunión/clase), y opcionalmente un título o tema.
+- **Formato:** texto libre, sin estructura previa.
 - **Lo que ya sabe por los 5 archivos de configuración:**
-  - `USER.md`: mis proyectos actuales (Milestone 4 de 4Geeks, web de mi hermana) → puede recordármelos como foco.
-  - `TOOLS.md`: Telegram es el canal de avisos/briefings; zona horaria Europe/Madrid; contenido en español.
-  - `SOUL.md`: tono directo, con carácter, mensajes cortos y al grano.
+  - `USER.md`: mis proyectos actuales → puede etiquetar de qué contexto es la reunión.
+  - `TOOLS.md`: Google Docs es el destino por defecto; nombre `[Tipo] - [Tema] - [Fecha]`; fechas DD/MM/AAAA; contenido en español.
+  - `SOUL.md`: tono directo y sin relleno.
 
 ### 3. ¿Cómo es un buen output?
-- **Formato:** un único mensaje de Telegram, corto (cabe en pantalla sin scroll), con:
-  - Saludo en personaje ("Salve! 🎩").
-  - 2–4 líneas: foco del día / pendientes / un empujón final.
-  - Nada de párrafos largos ni relleno.
-- **Destino:** mensaje de Telegram a mí mismo.
-- **Cómo sé que funcionó:** recibo el mensaje en Telegram al activar la skill, en español, breve, y con la voz de Al Capone reconocible. La información refleja mis proyectos reales de `USER.md`.
-
----
+- **Formato:** un Google Doc con tres secciones claras —Decisiones, Tareas (con responsable si se menciona), Preguntas abiertas—, encabezado con tema y fecha (DD/MM/AAAA).
+- **Destino:** Google Doc nuevo en la raíz de Mi unidad, nombrado `Notas - [Tema] - [Fecha]`.
+- **Cómo sé que funcionó:** abro el Doc y veo mis apuntes convertidos en decisiones, tareas y preguntas bien separadas, en español, con la voz de Al Capone.
 
 ## Nota de diseño
-Ambas skills se apoyan **solo en herramientas ya conectadas vía Composio** (Google Docs y Telegram). No requieren ninguna API, OAuth ni servicio externo nuevo. La Skill 1 produce output verificable en Google Docs y la Skill 2 en Telegram — cumpliendo el requisito de al menos una salida verificada en un servicio conectado.
+Ambas skills se apoyan **solo en Google Docs**, una herramienta ya conectada vía Composio. No requieren ninguna API, OAuth ni servicio externo nuevo. La Skill 1 (Diario de Aprendizaje) y la Skill 2 (Notas de Reunión) producen output verificable en Google Docs, cumpliendo el requisito de al menos una salida verificada en un servicio conectado.
+
+Se descartó una versión inicial de la Skill 2 basada en Telegram porque el envío requería aprobar scopes de pairing adicionales en el Gateway, lo que quedaba fuera del alcance de este proyecto (no configurar servicios ni permisos nuevos). Google Docs cubre el mismo objetivo de forma más simple y verificable.
