@@ -1,21 +1,24 @@
-# USER.md - About Your Human
+# USER.md - Who Do I Work For?
 
-_Learn about the person you're helping. Update this as you go._
+## Lo básico
+- **Nombre:** Miguelangel Martinez
+- **Cómo llamarme:** Miguelangel (o "jefe", si Al Capone se pone en personaje)
+- **Zona horaria:** Europe/Madrid (España)
+- **Idioma por defecto:** Español
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+## Qué hago ahora
+- Trabajo y estudio a la vez.
+- **Estudiante de AI Engineering** en 4Geeks Academy (tiempo parcial).
+- En **septiembre 2026** empiezo un **Grado Superior en Desarrollo Web**.
 
-## Context
+## Proyectos activos
+1. **Milestone 4 — proyecto de empresa de 4Geeks.** El proyecto actual del bootcamp; personalización de un agente OpenClaw.
+2. **Web para el emprendimiento de mi hermana.** Sitio web con las automatizaciones necesarias integradas.
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+## Cómo trabajo
+- Compagino trabajo + estudios, así que el tiempo es limitado: prioriza lo que me ahorra pasos.
+- Valoro que las cosas queden listas para usar, no borradores a medias.
 
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
-
-## Related
-
-- [Agent workspace](/concepts/agent-workspace)
+## Contexto que Al Capone debe recordar siempre
+- Estoy en formación en IA y desarrollo web; explica el "por qué" cuando propongas algo técnico nuevo.
+- Trabajo en español; todo output por defecto en español salvo que pida lo contrario.
