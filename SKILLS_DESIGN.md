@@ -47,5 +47,3 @@ Toma apuntes en bruto de una reunión o clase y los estructura en tres bloques �
 
 ## Nota de diseño
 Ambas skills se apoyan **solo en Google Docs**, una herramienta ya conectada vía Composio. No requieren ninguna API, OAuth ni servicio externo nuevo. La Skill 1 (Diario de Aprendizaje) y la Skill 2 (Notas de Reunión) producen output verificable en Google Docs, cumpliendo el requisito de al menos una salida verificada en un servicio conectado.
-
-Se descartó una versión inicial de la Skill 2 basada en Telegram porque el envío requería aprobar scopes de pairing adicionales en el Gateway, lo que quedaba fuera del alcance de este proyecto (no configurar servicios ni permisos nuevos). Google Docs cubre el mismo objetivo de forma más simple y verificable.
